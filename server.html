@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Scatter Plots</title>
+        <link rel="stylesheet" href= "static/styles.css">
+        <script src="https://cdn.bokeh.org/bokeh/release/bokeh-1.1.0.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-2.0.1.min.css" type="text/css" />
+
+
+
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-2.0.1.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+              <div class="left-side">
+                <div class="nav-link-wrapper ">
+                  <a href="{%url 'home'%}">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                  <a href="{%url 'about'%}">About</a>
+                </div>
+
+                <div class="nav-link-wrapper active-nav-link">
+                  <a href="{%url 'plot'%}">Bokeh</a>
+                </div>
+
+              </div>
+
+              <div class="right-side">
+                <div class="brand">
+                  CLINTON EMOK
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="content-wrapper">
+           \n<script id="1222">\n  var xhr = new XMLHttpRequest()\n  xhr.responseType = \'blob\';\n  xhr.open(\'GET\', "http://localhost:5006/Interactive/autoload.js?bokeh-autoload-element=1222&bokeh-app-path=/Interactive&bokeh-absolute-url=http://localhost:5006/Interactive", true);\n  \n  xhr.onload = function (event) {\n    var script = document.createElement(\'script\'),\n    src = URL.createObjectURL(event.target.response);\n    script.src = src;\n    document.body.appendChild(script);\n  };\nxhr.send();' +
+        '\n</script>
+        </div>
+
+    </body>
+</html>
